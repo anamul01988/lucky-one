@@ -1,0 +1,19 @@
+.header{
+    background: rgb(239, 240, 240);
+
+    font-size: 5px;
+    text-align: center;
+}
+.header .content h1{
+   color: rgb(16, 16, 15);
+   font-size: 26px;
+
+
+}
+.header .content h4{
+    color:#0a0a0ab8;
+    font-size: 30px;
+ 
+ }
+
+ 
