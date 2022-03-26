@@ -17,7 +17,6 @@ import './Home.css';
 const Home = () => {
     const[courses,setCourses]=useState([]);
     const [cart, setCart]=useState([]);
-    const [reset, setReset] = useState([]);
     // const [modalIsOpen, setIsOpen] = useState(false);
 
 
@@ -54,7 +53,6 @@ const handleAddCart = (course)=>{
     const limitPurchase = cart.find(courses => courses.id === course.id);
     if(!limitPurchase){
         if(cart.length < 4){
-            // console.log("product added",course);
             const newCart = [...cart,course];
             setCart(newCart);
         }
@@ -64,7 +62,6 @@ const handleAddCart = (course)=>{
     }
 
   }
- 
     return (
       <>
         <div className="container">

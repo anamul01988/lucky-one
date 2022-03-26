@@ -1,4 +1,5 @@
-/* .sidebar{
+.sidebar{
     position: sticky;
     top: 0;
-} */
+    background: rgba(185, 199, 207, 0.824);
+}

@@ -1,20 +1,6 @@
-import React, { useState } from 'react';
 import './Cart.css';
 const Cart = (props) => {
-    // const [reset, setReset] = useState([]);
-    console.log(props)
-    // console.log(props.cart)
     const {cart} = props;
-    // const resetCourse = ()=>{
-    //     console.log('reset')
-    //     setReset();
-    // }
-    // const resetCourse = ()=>{
-    //     // console.log('reset',courses)
-    //     const newCart =  [];
-    //     setReset([newCart]);
-    // }
-    
     return (
         <div className='cart'>
              <h2 className='fs-4 my-3'>Selected Course</h2>
