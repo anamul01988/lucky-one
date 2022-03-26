@@ -1,3 +1,3 @@
 ### Global Education site
 
-[GitHub Pages](https://global-educational-site.netlify.app/)
+[live link](https://global-educational-site.netlify.app/)
