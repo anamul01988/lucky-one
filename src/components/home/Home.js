@@ -2,10 +2,36 @@ import React, { useEffect, useState } from 'react';
 import Cart from '../cart/Cart';
 import CourseList from '../courseList/CourseList';
 import './Home.css';
+// import Modal from 'react-modal';
+// // const customStyles = {
+// //     content: {
+// //       top: '50%',
+// //       left: '50%',
+// //       right: 'auto',
+// //       bottom: 'auto',
+// //       marginRight: '-50%',
+// //       transform: 'translate(-50%, -50%)',
+// //     },
+// //   };
+//   Modal.setAppElement('#root');
 const Home = () => {
     const[courses,setCourses]=useState([]);
     const [cart, setCart]=useState([]);
-    const [reset, setReset] = useState([""]);
+    const [reset, setReset] = useState([]);
+    // const [modalIsOpen, setIsOpen] = useState(false);
+
+
+    // function openModal() {
+    //     setIsOpen(true);
+    //   }
+    
+    //   function closeModal() {
+    //     setIsOpen(false);
+    //   }
+    
+
+
+
 useEffect(()=>{
     fetch('./fakeData.JSON')
     .then(res=>res.json())
@@ -13,43 +39,31 @@ useEffect(()=>{
     //  .then(data=>console.log(data))
 },[]);
 
-const singleCart =(course)=>{
-    console.log("single added",course)
-    const newCart = cart.length>0 ? cart[Math.ceil(Math.random()*cart.length)]: [];
+const singleCart =()=>{
+    // console.log("single added",course)
+    const newCart = cart.length>0 ? cart[Math.floor(Math.random()*cart.length)]: [];
     setCart([newCart]);
 }
-// const resetCourse = (reset)=>{
-//     console.log('reset',courses)
-//     setReset(" ");
-// }
+const resetCart = ()=>{
+    console.log('reset',courses)
+    const newCart =  [""];
+    setCart([newCart]);
+}
 
 const handleAddCart = (course)=>{
-    if(cart.length < 4){
-        console.log("product added",course);
-        const newCart = [...cart,course];
-        setCart(newCart);
+    const limitPurchase = cart.find(courses => courses.id === course.id);
+    if(!limitPurchase){
+        if(cart.length < 4){
+            // console.log("product added",course);
+            const newCart = [...cart,course];
+            setCart(newCart);
+        }
+        else{
+            alert("You cant select more than 4 course at a time.")
+        }
     }
-    else{
-        // console.log("cross the limit")
-        alert('you have crossed your limit.')
-    }
-    // const limitPurchase = cart.find(courses => courses.id === course.id);
-    // if(!limitPurchase){
-    //     if(cart.length < 4){
-    //         console.log("product added",course);
-    //         const newCart = [...cart,course];
-    //         setCart(newCart);
-    //     }
-    //     else{
-    //         console.log("cross the limit")
-    //     }
-    // }
 
   }
-
-  
-
-  
  
     return (
       <>
@@ -70,10 +84,22 @@ const handleAddCart = (course)=>{
                         <div className="col-md-3 sidebar">
                             <div className="row">
                                 <div className=" col-sm-12 col-md-12">
+                                {/* <button onClick={openModal}>Open Modal</button> */}
                                    {
-                                         <Cart cart = {cart} singleCart={singleCart}/>
+                                         <Cart cart = {cart} singleCart={singleCart} resetCart = {resetCart}/>
 
                                    }
+
+
+                                        {/* <Modal
+                                                isOpen={modalIsOpen}
+                                                onRequestClose={closeModal}
+                                                style={customStyles}
+                                                contentLabel="Example Modal"
+                                            > Course
+                                        </Modal> */}
+
+
                                 </div>
                             </div>
 
