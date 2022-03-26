@@ -6,21 +6,24 @@
         "id":"2", "name": "Web program","img":"https://eduma.thimpress.com/demo-1/wp-content/uploads/sites/89/2015/10/blog-4-450x267.jpg", "instructor": "Arifull islam", "payment": 4000
     },
     {
-        "id":"3","name": "system analysis","img":"https://eduma.thimpress.com/demo-1/wp-content/uploads/sites/89/2015/10/blog-2-450x267.jpg", "instructor": "Akramul haque", "payment": 2000
+        "id":"3","name": "system analysis","img":"https://img.freepik.com/free-photo/knowledge-day-female-university-student-student-tutoring-education-concept-friendly-teacher_378307-10939.jpg?w=996", "instructor": "Akramul haque", "payment": 2000
     },
     {
-        "id":"4", "name": "Artificial intelligence","img":"https://eduma.thimpress.com/demo-1/wp-content/uploads/sites/89/2015/10/blog-4-450x267.jpg", "instructor": "Aminul sifat", "payment": 5000
+        "id":"4", "name": "Artificial intelligence","img":"https://img.freepik.com/free-photo/smiling-teacher-classroom-teachers-day-bearded-teacher-learning-education-concept-preparing_378307-10948.jpg?w=900", "instructor": "Aminul sifat", "payment": 5000
     },
     {
-        "id":"5", "name": "System programming","img":"https://eduma.thimpress.com/demo-1/wp-content/uploads/sites/89/2015/10/blog-4-450x267.jpg","instructor": "Anamul haque", "payment": 1000
+        "id":"5", "name": "System programming","img":"https://img.freepik.com/free-photo/elegant-young-teacher-with-brunette-hair-stylish-light-shirt-black-striped-suit-glasses-holding-writings-pen-giving-lecture_197531-24666.jpg?t=st=1648307218~exp=1648307818~hmac=a61a52eecd606c62d46b9ccb8ecce4864481dd20edcebb7cc20910ad48e34d21&w=900","instructor": "Anamul haque", "payment": 1000
     },
     {
-        "id":"6", "name": "Python","img":"https://eduma.thimpress.com/demo-1/wp-content/uploads/sites/89/2015/10/blog-4-450x267.jpg", "instructor": "Tarikul islam", "payment": 6000
+        "id":"6", "name": "Python","img":"https://img.freepik.com/free-photo/portrait-indian-lady-teacher-saree-stands-against-green-white-blackboard_466689-7082.jpg?w=900", "instructor": "Tarikul islam", "payment": 6000
     },
     {
-        "id":"7", "name": "Android java","img":"https://eduma.thimpress.com/demo-1/wp-content/uploads/sites/89/2015/10/blog-4-450x267.jpg", "instructor": "Shoriful Islam", "payment": 4000
+        "id":"7", "name": "Android java","img":"https://as1.ftcdn.net/v2/jpg/04/54/92/98/1000_F_454929850_lON1zxUjvnhKrm5e5IcUpFWMc5NaDAKO.jpg", "instructor": "Shoriful Islam", "payment": 4000
     },
     {
-        "id":"8", "name": "java","img":"https://eduma.thimpress.com/demo-1/wp-content/uploads/sites/89/2015/10/blog-4-450x267.jpg", "instructor": "Faruk hossain", "payment": 5000
+        "id":"8", "name": "java","img":"https://as2.ftcdn.net/v2/jpg/01/38/76/47/1000_F_138764788_taSEl2J2KuXNZbLY5w05PwlRlnyUAyPu.jpg", "instructor": "Faruk hossain", "payment": 5000
+    },
+    {
+        "id":"9", "name": "Machine Learning","img":"https://as1.ftcdn.net/v2/jpg/02/25/43/84/1000_F_225438459_rf2TFCzW8MohNc2jD98Fu9UZg9fAbkBJ.jpg", "instructor": "Akash Hossain", "payment": 22000
     }
     ]

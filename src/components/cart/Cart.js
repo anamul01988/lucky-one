@@ -10,7 +10,7 @@ const Cart = (props) => {
              ))
           }
           <div className='button-section d-flex justify-content-around'>
-          <button onClick={()=>props.singleCart()} className=" btn custome-btn btn-block btn-sm mt-3 py-2 px-2">Single course</button>
+          <button onClick={()=>props.singleCart()} className=" btn custome-btn btn-block btn-sm mt-3 py-2 px-2">Special course</button>
           <button onClick={()=>props.resetCart()} className=" btn custome-btn btn-block btn-sm mt-3 ">Reset</button>
           </div>
            

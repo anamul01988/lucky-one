@@ -16,7 +16,6 @@ const CourseList = ({course, handleAddCart}) => {
 
           </div>
           <button onClick={()=>handleAddCart(course)} className="cart-btn btn custome-btn btn-block btn-sm mt-3 "> 
-                {/* <i className="fa fa-money"></i> */}
                 add to cart  < FaCartPlus/> </button>
         </div>
       </div>

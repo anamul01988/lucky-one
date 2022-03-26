@@ -2,44 +2,21 @@ import React, { useEffect, useState } from 'react';
 import Cart from '../cart/Cart';
 import CourseList from '../courseList/CourseList';
 import './Home.css';
-// import Modal from 'react-modal';
-// // const customStyles = {
-// //     content: {
-// //       top: '50%',
-// //       left: '50%',
-// //       right: 'auto',
-// //       bottom: 'auto',
-// //       marginRight: '-50%',
-// //       transform: 'translate(-50%, -50%)',
-// //     },
-// //   };
-//   Modal.setAppElement('#root');
+
 const Home = () => {
     const[courses,setCourses]=useState([]);
     const [cart, setCart]=useState([]);
-    // const [modalIsOpen, setIsOpen] = useState(false);
-
-
-    // function openModal() {
-    //     setIsOpen(true);
-    //   }
-    
-    //   function closeModal() {
-    //     setIsOpen(false);
-    //   }
-    
-
-
+  
 
 useEffect(()=>{
     fetch('./fakeData.JSON')
     .then(res=>res.json())
     .then(data=>setCourses(data))
-    //  .then(data=>console.log(data))
+   
 },[]);
 
 const singleCart =()=>{
-    // console.log("single added",course)
+
     const newCart = cart.length>0 ? cart[Math.floor(Math.random()*cart.length)]: [];
     setCart([newCart]);
 }
@@ -81,22 +58,11 @@ const handleAddCart = (course)=>{
                         <div className="col-md-3 sidebar">
                             <div className="row">
                                 <div className=" col-sm-12 col-md-12">
-                                {/* <button onClick={openModal}>Open Modal</button> */}
+                             
                                    {
                                          <Cart cart = {cart} singleCart={singleCart} resetCart = {resetCart}/>
 
                                    }
-
-
-                                        {/* <Modal
-                                                isOpen={modalIsOpen}
-                                                onRequestClose={closeModal}
-                                                style={customStyles}
-                                                contentLabel="Example Modal"
-                                            > Course
-                                        </Modal> */}
-
-
                                 </div>
                             </div>
 
