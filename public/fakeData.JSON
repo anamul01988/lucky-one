@@ -15,7 +15,7 @@
         "id":"5", "name": "System programming","img":"https://eduma.thimpress.com/demo-1/wp-content/uploads/sites/89/2015/10/blog-4-450x267.jpg","instructor": "Anamul haque", "payment": 1000
     },
     {
-        "id":"6", "name": "Pthon","img":"https://eduma.thimpress.com/demo-1/wp-content/uploads/sites/89/2015/10/blog-4-450x267.jpg", "instructor": "Tarikul islam", "payment": 6000
+        "id":"6", "name": "Python","img":"https://eduma.thimpress.com/demo-1/wp-content/uploads/sites/89/2015/10/blog-4-450x267.jpg", "instructor": "Tarikul islam", "payment": 6000
     },
     {
         "id":"7", "name": "Android java","img":"https://eduma.thimpress.com/demo-1/wp-content/uploads/sites/89/2015/10/blog-4-450x267.jpg", "instructor": "Shoriful Islam", "payment": 4000

@@ -15,7 +15,7 @@
     height: 1%;
     bottom: 0;
     left: 0;
-    background: #515661;
+    background: #e5e5a8;
     transition: all ease 0.5s;
     z-index: -1;
     border-radius: 5px;
@@ -24,7 +24,7 @@
     height: 100%;
   }
   .custom-card:hover {
-    color: #fff;
+    color: rgb(10, 9, 9);
     transform: translateY(-10px);
   }
   .custom-img {
@@ -40,9 +40,9 @@
       text-align: left;
   }
   .card-content h5 {
-    font-size: 25px;
+    font-size: 18px;
     /* color: yellowgreen; */
-    color: olivedrab;
+    color: rgb(25, 25, 26);
 }
   .custome-btn {
     background: #ff5858;
@@ -50,6 +50,18 @@
     display: block;
     transition: all ease-in-out 0.3s;
   }
+  .cart-btn {
+    width: 100%;
+    background: #170e01;
+    border: 1px solid #e5ecf1;
+    border-radius: 0px 0px 8px 8px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+}
   .custome-btn:hover {
     background: #29272a;
     color: #fff;

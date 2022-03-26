@@ -13,11 +13,11 @@ const CourseList = ({course, handleAddCart}) => {
               <h5><span className="mb-2 fw-bold">Course:</span> {name}</h5>
               <p><span className="mb-2 fw-bold">Instructor:</span> {instructor}</p>
               <p><span className="mb-2 fw-bold">Payment:</span> {payment}</p>
-              <button onClick={()=>handleAddCart(course)} className=" btn custome-btn btn-block btn-sm mt-3 "> 
-                {/* <i className="fa fa-money"></i> */}
-                add to cart  < FaCartPlus/> </button>
 
           </div>
+          <button onClick={()=>handleAddCart(course)} className="cart-btn btn custome-btn btn-block btn-sm mt-3 "> 
+                {/* <i className="fa fa-money"></i> */}
+                add to cart  < FaCartPlus/> </button>
         </div>
       </div>
     );
